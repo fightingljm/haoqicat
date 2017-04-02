@@ -16,6 +16,6 @@ export function userInfo(username,password) {
         dispatch({type:'SIGNIN',userData:res.data})
         browserHistory.push('/');
       }
-      )
+    )
   }
 }

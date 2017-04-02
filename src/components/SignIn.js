@@ -24,7 +24,7 @@ class SignIn extends React.Component {
     this.setState({password:password.trim()})
   }
   render(){
-    console.log(this.props.userData);
+    // console.log(this.props.userData);
     return(
       <div className='signin-root'>
         <MuiThemeProvider>

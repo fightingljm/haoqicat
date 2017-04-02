@@ -8,7 +8,7 @@ class Home extends React.Component {
     this.props.allCourse()
   }
   render(){
-    console.log(this.props.cats);
+    // console.log(this.props.cats);
     return(
       <div className='home'>
         <p>已发布的课程</p>
