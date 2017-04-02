@@ -1,23 +1,19 @@
 import React from 'react';
 import axios from 'axios';
+import {connect} from 'react-redux'
+import allCourse from '../action/actions.js'
 
 class Home extends React.Component {
-  constructor() {
-    super();
-    this.state={
-      cats:[]
-    }
-  }
   componentWillMount(){
-    axios.get('http://tiger.haoduoshipin.com/cats')
-      .then(res => this.setState({cats:res.data.cats}))
+    this.props.allCourse()
   }
   render(){
+    console.log(this.props.cats);
     return(
       <div className='home'>
         <p>已发布的课程</p>
         <div className='home-root'>
-          {this.state.cats.map(item =>
+          {this.props.cats.map(item =>
             <div key={Math.random()} className='card'>
               <div className='image'></div>
               <p>{item.name}</p>
@@ -28,5 +24,7 @@ class Home extends React.Component {
     )
   }
 }
-
-export default Home;
+let mapStateToProps = (state) => ({
+  cats:state.cats
+})
+export default connect(mapStateToProps,{allCourse})(Home);

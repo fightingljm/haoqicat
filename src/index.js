@@ -7,4 +7,7 @@ injectTapEventPlugin();
 
 import './main.css'
 
-render(<Routers />,document.getElementById('root'));
+import {Provider} from 'react-redux';
+import store from './store/store.js'
+
+render(<Provider store={store}><Routers /></Provider>,document.getElementById('root'));

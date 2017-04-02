@@ -49,7 +49,8 @@ a{
   height: 100%;
   padding: 2em 1em;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 .home-root .image{
   width: 240px;
@@ -58,8 +59,9 @@ a{
   background-color: #ccc;
 }
 .home-root .card{
-  border: 1px solid #000;
+  border: 1px solid #ccc;
   border-radius: 0.2em;
+  box-shadow: 0 0 4px 4px rgba(0,0,0,.05);
 }
 .home-root p{
   width: 100%;
