@@ -33,6 +33,9 @@ a{
 .header-root .right a{
   padding-left: 0.8em;
 }
+.header-root .right .cools{
+  color: #eb2d6e;
+}
 .home{
   height: 100%;
   padding: 5em 1em;

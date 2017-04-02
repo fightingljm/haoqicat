@@ -42,6 +42,7 @@ class SignIn extends React.Component {
               <TextField
                 hintText="Please input password"
                 floatingLabelText="password"
+                type="password"
                 onChange={this.handlePassword.bind(this)}
               />
             </div>
