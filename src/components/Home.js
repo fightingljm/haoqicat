@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import {connect} from 'react-redux'
-import allCourse from '../action/actions.js'
+import {allCourse} from '../action/actions.js'
 
 class Home extends React.Component {
   componentWillMount(){
