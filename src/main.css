@@ -14,6 +14,10 @@
 a{
   text-decoration: none;
 }
+html,body{
+  font-family: arial;
+  color: #6d6d6d;
+}
 .header-root{
   width: 100%;
   padding: 1em 1.2em;
@@ -25,7 +29,6 @@ a{
   display: block;
   color: white;
   font-size: 1.4em;
-  font-family: arial;
 }
 .header-root .right{
   display: flex;
@@ -41,12 +44,12 @@ a{
   padding: 5em 1em;
 }
 .home>p{
-  width: 10%;
+  width: 145px;
   margin: 0 auto;
   text-align: center;
-  border-bottom:2px solid #03a9f4;
-  font-weight: bold;
-  font-size: 1.2em;
+  font-size: 1.5em;
+  font-weight: 400;
+  border-bottom: 3px solid rgb(0, 188, 212);
 }
 .home-root{
   height: 100%;
@@ -60,11 +63,17 @@ a{
   height: 150px;
   text-align: center;
   background-color: #ccc;
+  overflow: hidden;
+}
+.home-root .image img{
+  width: 240px;
+  height: 150px;
 }
 .home-root .card{
-  border: 1px solid #ccc;
+  border: 1px solid #e4e1e1;
   border-radius: 0.2em;
   box-shadow: 0 0 4px 4px rgba(0,0,0,.05);
+  margin-top: 2em;
 }
 .home-root p{
   width: 100%;

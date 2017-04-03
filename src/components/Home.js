@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import {connect} from 'react-redux'
 import {allCourse} from '../action/actions.js'
+import image from '../image/gitbeijing.png'
 
 class Home extends React.Component {
   componentWillMount(){
@@ -15,7 +16,7 @@ class Home extends React.Component {
         <div className='home-root'>
           {this.props.cats.map(item =>
             <div key={Math.random()} className='card'>
-              <div className='image'></div>
+              <div className='image'><img src={image} alt=""/></div>
               <p>{item.name}</p>
             </div>
           )}
