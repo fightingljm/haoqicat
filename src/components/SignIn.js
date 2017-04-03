@@ -24,7 +24,7 @@ class SignIn extends React.Component {
     this.setState({password:password.trim()})
   }
   render(){
-    // console.log(this.props.userData);
+    // console.log(this.props.currentUser);
     return(
       <div className='signin-root'>
         <MuiThemeProvider>
@@ -54,6 +54,6 @@ class SignIn extends React.Component {
   }
 }
 let mapStateToProps = (state) => ({
-  userData:state.user
+  currentUser:state.user
 })
 export default connect(mapStateToProps,{userInfo})(SignIn);
